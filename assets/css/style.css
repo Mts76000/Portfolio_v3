@@ -1,0 +1,234 @@
+body {
+  font-family: "Sofia Sans";
+  background-color: #ffffff;
+  color: #232323;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.wrap {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.wrap2 {
+  max-width: 950px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+.header .wrap h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.header .wrap nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.header .wrap nav ul li a {
+  color: #5b6e80;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.header .wrap nav ul li a:hover {
+  color: #6c63ff;
+  transform: scale(1.5);
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .wrap2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+main .wrap2 .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main .wrap2 .profile .profile__info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: 0.5px solid #232323;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 500px;
+  height: 200px;
+  height: 200px;
+}
+main .wrap2 .profile .profile__text {
+  display: flex;
+  flex-direction: column;
+  font-weight: lighter;
+  font-size: 24px;
+  color: black;
+}
+main .wrap2 .profile .profile__text h1 {
+  font-size: 24px;
+}
+main .wrap2 .profile .profile__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 400px;
+  height: 200px;
+}
+main .wrap2 .profile .profile__actions .lien {
+  display: flex;
+  gap: 1.5rem;
+  height: 90px;
+}
+main .wrap2 .profile .profile__actions .lien a {
+  padding: 1rem 4rem;
+  border-radius: 15px;
+  display: block;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.3s ease-in-out;
+}
+main .wrap2 .profile .profile__actions .lien a i {
+  height: 60px;
+  width: 60px;
+  font-size: 60px;
+}
+main .wrap2 .profile .profile__actions .lien a:hover {
+  transform: scale(1.05);
+}
+main .wrap2 .profile .profile__actions .lien .github i {
+  color: #742e9c;
+}
+main .wrap2 .profile .profile__actions .mode-switch {
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+  border: 0.5px solid #ffc300;
+  height: 90px;
+  padding: 0.2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main .wrap2 .profile .profile__actions .mode-switch .jour {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc300;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .wrap2 .profile .profile__actions .mode-switch .jour:hover {
+  transform: scale(1.02);
+}
+main .wrap2 .profile .profile__actions .mode-switch .nuit {
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main .wrap2 .actions {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  flex-wrap: wrap;
+}
+main .wrap2 .actions a i {
+  height: 60px;
+  width: 60px;
+  font-size: 60px;
+}
+main .wrap2 .actions .linkedin {
+  width: 180px;
+  padding: 1rem 4rem;
+  border-radius: 15px;
+  display: block;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #0066c7;
+  transition: all 0.3s ease-in-out;
+}
+main .wrap2 .actions .linkedin:hover {
+  transform: scale(1.05);
+}
+main .wrap2 .actions .work-btn {
+  width: 400px;
+  padding: 1rem 4rem;
+  border-radius: 15px;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 0.5px solid #232323;
+  transition: all 0.3s ease-in-out;
+}
+main .wrap2 .actions .work-btn:hover {
+  transform: scale(1.05);
+}
+main .wrap2 .actions .music-controls {
+  width: 300px;
+  padding: 1rem 4rem;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  gap: 2rem;
+}
+main .wrap2 .actions .music-controls a i {
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .wrap2 .actions .music-controls a i:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

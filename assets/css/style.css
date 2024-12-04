@@ -6,6 +6,12 @@ body {
   margin: 0;
 }
 
+/* Mode nuit */
+body.dark-mode {
+  background-color: #141416;
+  color: #ffffff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -63,6 +69,17 @@ ol {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+body.dark-mode .header .wrap nav ul li a {
+  color: white;
+}
+body.dark-mode .header .wrap nav ul li a {
+  color: white;
+}
+body.dark-mode .header .wrap nav ul li a:hover {
+  color: #6c63ff;
+  transform: scale(1.5);
+  font-size: 20px;
+}
 .header .wrap nav ul li a:hover {
   color: #6c63ff;
   transform: scale(1.5);
@@ -99,6 +116,9 @@ main .wrap2 .profile .profile__info {
   height: 200px;
   height: 200px;
 }
+body.dark-mode main .wrap2 .profile .profile__info {
+  border: 0.5px solid white;
+}
 main .wrap2 .profile .profile__text {
   display: flex;
   flex-direction: column;
@@ -108,6 +128,9 @@ main .wrap2 .profile .profile__text {
 }
 main .wrap2 .profile .profile__text h1 {
   font-size: 24px;
+}
+body.dark-mode main .wrap2 .profile .profile__text {
+  color: white;
 }
 main .wrap2 .profile .profile__actions {
   display: flex;
@@ -140,6 +163,9 @@ main .wrap2 .profile .profile__actions .lien a:hover {
 main .wrap2 .profile .profile__actions .lien .github i {
   color: #742e9c;
 }
+body.dark-mode main .wrap2 .profile .profile__actions .lien .github i {
+  color: white;
+}
 main .wrap2 .profile .profile__actions .mode-switch {
   width: 100%;
   display: flex;
@@ -154,10 +180,17 @@ main .wrap2 .profile .profile__actions .mode-switch .jour {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffc300;
   border-radius: 15px;
   cursor: pointer;
+  background-color: #ffc300;
   transition: all 0.3s ease-in-out;
+}
+main .wrap2 .profile .profile__actions .mode-switch .jour svg {
+  width: 50px;
+  height: 50px;
+}
+main .wrap2 .profile .profile__actions .mode-switch .jour svg g {
+  stroke: white;
 }
 main .wrap2 .profile .profile__actions .mode-switch .jour:hover {
   transform: scale(1.02);
@@ -169,6 +202,26 @@ main .wrap2 .profile .profile__actions .mode-switch .nuit {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .wrap2 .profile .profile__actions .mode-switch .nuit svg {
+  width: 50px;
+  height: 50px;
+  color: #5b6e80;
+}
+body.dark-mode main .wrap2 .profile .profile__actions .mode-switch .nuit svg {
+  color: white;
+}
+main .wrap2 .profile .profile__actions .mode-switch .nuit:hover {
+  transform: scale(1.02);
+}
+body.dark-mode main .wrap2 .profile .profile__actions .mode-switch .jour {
+  opacity: 0.5;
+  background-color: transparent;
+}
+body.dark-mode main .wrap2 .profile .profile__actions .mode-switch .nuit {
+  background-color: #ffc300;
+  color: white;
 }
 main .wrap2 .actions {
   display: flex;
@@ -204,6 +257,9 @@ main .wrap2 .actions .work-btn {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border: 0.5px solid #232323;
   transition: all 0.3s ease-in-out;
+}
+body.dark-mode main .wrap2 .actions .work-btn {
+  border: 0.5px solid white;
 }
 main .wrap2 .actions .work-btn:hover {
   transform: scale(1.05);

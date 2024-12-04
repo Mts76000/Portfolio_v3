@@ -402,4 +402,47 @@ main {
     display: block;
     font-size: 25px;
   }
+
+  main .wrap2 {
+    margin-top: 2.5rem;
+    .actions {
+      flex-direction: column;
+      padding: 0rem 1rem;
+      gap: 2rem;
+      height: auto;
+      .linkedin {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .work-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 90px;
+      }
+      .music-controls {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 90px;
+      }
+    }
+    .profile {
+      flex-direction: column;
+      padding: 0rem 1rem;
+      .profile__info {
+        width: 100%;
+        justify-content: center;
+      }
+      .profile__actions {
+        width: 100%;
+        .lien a {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

@@ -359,6 +359,48 @@ main .wrap2 .actions .music-controls a i:hover {
     display: block;
     font-size: 25px;
   }
+  main .wrap2 {
+    margin-top: 2.5rem;
+  }
+  main .wrap2 .actions {
+    flex-direction: column;
+    padding: 0rem 1rem;
+    gap: 2rem;
+    height: auto;
+  }
+  main .wrap2 .actions .linkedin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .wrap2 .actions .work-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+  }
+  main .wrap2 .actions .music-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+  }
+  main .wrap2 .profile {
+    flex-direction: column;
+    padding: 0rem 1rem;
+  }
+  main .wrap2 .profile .profile__info {
+    width: 100%;
+    justify-content: center;
+  }
+  main .wrap2 .profile .profile__actions {
+    width: 100%;
+  }
+  main .wrap2 .profile .profile__actions .lien a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

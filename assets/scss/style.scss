@@ -1,10 +1,6 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-// h1 {
-//   @include center;
-// }
-
 body {
   font-family: "Sofia Sans";
   background-color: $background-color;
@@ -19,7 +15,7 @@ body.no-scroll {
 
 body.dark-mode {
   background-color: $background-color-night;
-  color: #ffffff;
+  color: $white;
 }
 
 * {
@@ -69,7 +65,7 @@ ol {
         gap: 2rem;
         li {
           a {
-            color: $secondary-color;
+            color: $gris;
             font-size: 20px;
             transition: all 0.3s ease-in-out;
           }
@@ -83,13 +79,13 @@ ol {
               color: white;
             }
             a:hover {
-              color: #6c63ff;
+              color: $violet;
               transform: scale(1.5);
               font-size: 20px;
             }
           }
           a:hover {
-            color: #6c63ff;
+            color: $violet;
             transform: scale(1.5);
             font-size: 20px;
           }
@@ -126,7 +122,7 @@ ol {
       transition: all 0.3s ease-in-out;
     }
     a:hover {
-      color: #6c63ff;
+      color: $violet;
       transform: scale(1.5);
     }
   }
@@ -256,7 +252,7 @@ main {
           width: 100%;
           display: flex;
           border-radius: 15px;
-          border: 0.5px solid $jaune-color;
+          border: 0.5px solid $jaune;
           height: 90px;
           padding: 0.2rem;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -268,7 +264,7 @@ main {
             align-items: center;
             border-radius: 15px;
             cursor: pointer;
-            background-color: $jaune-color;
+            background-color: $jaune;
             transition: all 0.3s ease-in-out;
             svg {
               width: 50px;
@@ -294,7 +290,7 @@ main {
             svg {
               width: 50px;
               height: 50px;
-              color: #5b6e80;
+              color: $gris;
             }
           }
 
@@ -315,7 +311,7 @@ main {
             }
 
             .nuit {
-              background-color: $jaune-color;
+              background-color: $jaune;
               color: white;
             }
           }

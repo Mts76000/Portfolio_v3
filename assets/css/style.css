@@ -347,6 +347,70 @@ main .wrap2 .actions .music-controls a i {
 main .wrap2 .actions .music-controls a i:hover {
   transform: scale(1.2);
 }
+main .wrap2 .projets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .wrap2 .projets .gauche {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .wrap2 .projets .droite {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .wrap2 .projets .projects__card {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main .wrap2 .projets .projects__card .text {
+  position: absolute;
+  padding: 0rem 1rem;
+  color: white;
+}
+main .wrap2 .projets .projects__card .text h2 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+main .wrap2 .projets .projects__card .text p {
+  font-weight: lighter;
+  font-size: 20px;
+}
+main .wrap2 .projets .projects__card:hover {
+  transform: scale(1.05);
+}
+main .wrap2 .projets #cv-tech .text {
+  top: 375px;
+  left: 15px;
+}
+main .wrap2 .projets #votre-projet .text {
+  top: 50px;
+  left: 15px;
+}
+main .wrap2 .projets #votre-projet p {
+  max-width: 200px;
+}
+main .wrap2 .projets #onlyvax .text {
+  top: 30px;
+  left: 15px;
+}
+main .wrap2 .projets #onlyvax p {
+  max-width: 380px;
+}
+main .wrap2 .projets #garde-enfant {
+  height: 308px;
+}
+main .wrap2 .projets #garde-enfant .text {
+  top: 75px;
+  left: 15px;
+}
+main .wrap2 .projets #garde-enfant .text p {
+  max-width: 245px;
+}
 
 @media screen and (max-width: 1000px) {
   header {
@@ -400,6 +464,59 @@ main .wrap2 .actions .music-controls a i:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  main .wrap2 .projets {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 1rem;
+  }
+  main .wrap2 .projets .gauche {
+    width: 100%;
+    gap: 1rem;
+  }
+  main .wrap2 .projets .droite {
+    width: 100%;
+    gap: 1rem;
+  }
+  main .wrap2 .projets #cv-tech {
+    display: flex;
+    justify-content: end;
+    border-radius: 15px;
+    background-color: #0095e9;
+    width: 100%;
+  }
+  main .wrap2 .projets #votre-projet {
+    display: flex;
+    justify-content: end;
+    border-radius: 15px;
+    background-color: #f6ba00;
+    width: 100%;
+  }
+  main .wrap2 .projets #votre-projet .text p {
+    max-width: 100%;
+  }
+  main .wrap2 .projets #onlyvax {
+    display: flex;
+    justify-content: end;
+    border-radius: 15px;
+    background-color: #47297d;
+    width: 100%;
+  }
+  main .wrap2 .projets #onlyvax .text p {
+    max-width: 100%;
+  }
+  main .wrap2 .projets #garde-enfant {
+    display: flex;
+    justify-content: end;
+    border-radius: 15px;
+    background-color: #fe9f4a;
+    width: 100%;
+  }
+  main .wrap2 .projets #garde-enfant .text p {
+    max-width: 100%;
   }
 }
 

@@ -71,7 +71,7 @@
                 <a href="mailto:lamottemathis@gmail.com" class="btn gmail"><img src="assets/img/gmail.png" alt="Gmail"></a>
                 </div>
                 <div class="btn mode-switch">
-                    <div class="jour">
+                    <div class="jour" >
                     <!-- <img src="assets/img/sun.png" alt="Mode jour"> -->
 
                     <?xml version="1.0" ?><svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px"
@@ -106,9 +106,15 @@
         <a href="https://www.linkedin.com/in/mathis-lamotte-a386a6264/" target="_blank" class="btn linkedin"><i class="fa-brands fa-linkedin"></i></a>
         <a class="btn work-btn">Travaillons ensemble</a>
         <div class="music-controls">
-            <a class="music-controls__btn"><i class="fa-solid fa-backward"></i></a>
-            <a class="music-controls__btn"><i class="fa-solid fa-play"></i></a>
-            <a class="music-controls__btn"><i class="fa-solid fa-forward"></i></a>
+            <a class="music-controls__btn" onclick="previousTrack()">
+                <i class="fa-solid fa-backward"></i>
+            </a>
+            <a class="music-controls__btn" onclick="togglePlayPause()" id="playPauseBtn">
+                <i class="fa-solid fa-play"></i>
+            </a>
+            <a class="music-controls__btn" onclick="nextTrack()">
+                <i class="fa-solid fa-forward"></i>
+            </a>
         </div>
     </div>
 

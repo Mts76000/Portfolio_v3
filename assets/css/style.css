@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Sofia Sans";
   background-color: #ffffff;
@@ -222,7 +223,7 @@ main .wrap2 .profile .profile__actions .lien a:hover {
   transform: scale(1.05);
 }
 main .wrap2 .profile .profile__actions .lien .github i {
-  color: #742e9c;
+  color: #232323;
 }
 body.dark-mode main .wrap2 .profile .profile__actions .lien .github i {
   color: white;
@@ -411,7 +412,72 @@ main .wrap2 .projets #garde-enfant .text {
 main .wrap2 .projets #garde-enfant .text p {
   max-width: 245px;
 }
-main .wrap2 .skills {
+main .wrap2 .projet-mobile {
+  display: none;
+  padding: 0rem 1rem;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+main .wrap2 .projet-mobile h1 {
+  font-size: 32px;
+  padding: 1rem 0rem;
+}
+main .wrap2 .projet-mobile .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+main .wrap2 .projet-mobile p {
+  padding: 1rem 0rem;
+}
+main .wrap2 .projet-mobile .github {
+  display: flex;
+  gap: 0.5rem;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 1rem;
+}
+main .wrap2 .projet-mobile .github a {
+  color: black;
+}
+main .wrap2 .projet-mobile .github:hover {
+  color: #6c63ff;
+}
+main .wrap2 .projet-mobile .accordion:after {
+  content: "➕"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+main .wrap2 .projet-mobile .active:after {
+  content: "➖"; /* Unicode character for "minus" sign (-) */
+}
+main .wrap2 .projet-mobile .active,
+main .wrap2 .projet-mobile .accordion:hover {
+  background-color: #ccc;
+}
+main .wrap2 .projet-mobile .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+main .wrap2 .skillss {
+  padding-bottom: 2rem;
+}
+main .wrap2 .skillss .skills {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -420,20 +486,20 @@ main .wrap2 .skills {
   padding: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-main .wrap2 .skills h1 {
+main .wrap2 .skillss .skills h1 {
   font-size: 25px;
 }
-main .wrap2 .skills__icons {
+main .wrap2 .skillss .skills__icons {
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-main .wrap2 .skills__icons .carousel-track {
+main .wrap2 .skillss .skills__icons .carousel-track {
   display: flex;
   gap: 1rem;
   animation: scroll 15s linear infinite;
 }
-main .wrap2 .skills__icons .carousel-track .carousel-item {
+main .wrap2 .skillss .skills__icons .carousel-track .carousel-item {
   background-color: #e7e7e7;
   width: 75px;
   height: 75px;
@@ -504,6 +570,7 @@ main .wrap2 .skills__icons .carousel-track .carousel-item {
     justify-content: center;
   }
   main .wrap2 .projets {
+    display: none;
     flex-direction: column;
     width: 100%;
     justify-content: center;
@@ -556,8 +623,12 @@ main .wrap2 .skills__icons .carousel-track .carousel-item {
   main .wrap2 .projets #garde-enfant .text p {
     max-width: 100%;
   }
+  main .wrap2 .projet-mobile {
+    display: flex;
+  }
   main .wrap2 .skillss {
     padding: 0rem 1rem;
+    padding-bottom: 2rem;
   }
   main .wrap2 .skillss .skills .carousel-track {
     animation: scroll 7.5s linear infinite;

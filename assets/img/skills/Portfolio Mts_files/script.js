@@ -112,14 +112,3 @@ function nextTrack() {
   const newIndex = (currentTrackIndex + 1) % tracks.length;
   loadTrack(newIndex);
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const track = document.querySelector(".carousel-track");
-  const items = Array.from(track.children);
-
-  // Clone the items to simulate infinite scrolling
-  items.forEach((item) => {
-    const clone = item.cloneNode(true); // Create a clone of each image
-    track.appendChild(clone); // Add the clone to the end of the track
-  });
-});

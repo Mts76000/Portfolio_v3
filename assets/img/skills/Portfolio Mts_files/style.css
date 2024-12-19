@@ -415,39 +415,17 @@ main .wrap2 .skills {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  border: 1px solid #232323;
-  border-radius: 15px;
-  padding: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-main .wrap2 .skills h1 {
-  font-size: 25px;
-}
-main .wrap2 .skills__icons {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-main .wrap2 .skills__icons .carousel-track {
+main .wrap2 .skills .skills__icons {
   display: flex;
   gap: 1rem;
-  animation: scroll 15s linear infinite;
 }
-main .wrap2 .skills__icons .carousel-track .carousel-item {
+main .wrap2 .skills .skills__icons img {
   background-color: #e7e7e7;
   width: 75px;
   height: 75px;
   border-radius: 15px;
   padding: 1rem;
-  flex-shrink: 0;
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -555,12 +533,6 @@ main .wrap2 .skills__icons .carousel-track .carousel-item {
   }
   main .wrap2 .projets #garde-enfant .text p {
     max-width: 100%;
-  }
-  main .wrap2 .skillss {
-    padding: 0rem 1rem;
-  }
-  main .wrap2 .skillss .skills .carousel-track {
-    animation: scroll 7.5s linear infinite;
   }
 }
 

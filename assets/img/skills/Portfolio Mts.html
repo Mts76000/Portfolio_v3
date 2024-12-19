@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mts</title>
+<link rel="stylesheet" href="./Portfolio Mts_files/style.css">
+    <link rel="stylesheet" href="./Portfolio Mts_files/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Portfolio Mts_files/css2" rel="stylesheet">
+<script>
+if (!window._originalPrompt) {
+  window._originalPrompt = window.prompt;
+  window._originalConfirm = window.confirm;
+  window._originalAlert = window.alert;
+}
+
+function manipulateDialog(methodName, oldDialog) {
+  // override the default dialog and add our logic
+  window[methodName] = function (message = '', defaultValue = '') {
+    console.log('sending a message');
+
+    var answer = oldDialog(message, defaultValue);
+    if (methodName === 'confirm') answer = answer.toString();
+
+    // if the user didn't cancel it
+    if (answer || /(alert|confirm)/.test(methodName)) {
+      window.postMessage(
+        {
+          type: 'extension:injected-script',
+          payload: {
+            type: methodName,
+            value: answer,
+          },
+        },
+        '*'
+      );
+    }
+    return answer;
+  };
+}
+
+manipulateDialog('prompt', window._originalPrompt);
+manipulateDialog('confirm', window._originalConfirm);
+manipulateDialog('alert', window._originalAlert);
+</script><link rel="stylesheet" href="chrome-extension://emnoomldgleagdjapdeckpmebokijail/font/roboto-fonts.css" class="wtd-font"><link rel="stylesheet" href="chrome-extension://emnoomldgleagdjapdeckpmebokijail/font/unbounded-fonts.css" class="wtd-font"></head>
+
+<body cz-shortcut-listen="true" class=""><script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = '/browser-sync/browser-sync-client.js?v=3.0.3'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      } else if (document.head) {
+        document.head.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script><script async="" src="./Portfolio Mts_files/browser-sync-client.js"></script>
+
+    <!-- Header -->
+
+    <header class="header" id="header">
+        <div class="wrap">
+        <h1>Mts</h1>
+        
+
+        <a class="openBtn">
+            <span class="burger-icon">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </a>
+
+        <nav class="header__nav">
+            <ul class="nav-list">
+                <li><a href="http://localhost:3000/#projets">Projets</a></li>
+                <li><a href="http://localhost:3000/#competences">Compétences</a></li>
+                <li><a href="http://localhost:3000/#contact">Contact</a></li>
+            </ul>
+        </nav>  
+        
+        <!-- menu burger -->
+
+        <nav class="header__navBurger" id="mySidenav">
+            <a class="closeBtn close">×</a>
+            <ul class="nav-list">
+                <li><a href="http://localhost:3000/#projets">Projets</a></li>
+                <li><a href="http://localhost:3000/#competences">Compétences</a></li>
+                <li><a href="http://localhost:3000/#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- menu burger -->
+        
+        </div>
+    </header>
+
+    <main>
+     <div class="wrap2">
+        <section class="profile">
+            <div class="profile__info">
+                <img src="./Portfolio Mts_files/avatar.png" alt="Avatar" class="profile__avatar">
+                <div class="profile__text">
+                    <h1>Mathis Lamotte</h1>
+                    <p>Développeur Web </p>
+                    <p>Full Stack</p>
+                </div>
+            </div>
+            <div class="profile__actions">
+                <div class="lien">
+                <a href="https://github.com/Mts76000" target="_blank" class="btn github"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:lamottemathis@gmail.com" class="btn gmail"><img src="./Portfolio Mts_files/gmail.png" alt="Gmail"></a>
+                </div>
+                <div class="btn mode-switch">
+                    <div class="jour">
+                    <!-- <img src="assets/img/sun.png" alt="Mode jour"> -->
+
+                    <!--?xml version="1.0" ?--><svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title></title>
+                        <desc></desc>
+                        <defs></defs>
+                        <g fill="none" fill-rule="evenodd" id="Sunny" stroke="none" stroke-width="1">
+                            <g stroke="#979797" stroke-width="2" transform="translate(2.000000, 2.000000)">
+                                <circle cx="14" cy="14" id="Oval-4" r="8"></circle>
+                                <path d="M14,0 L14,3 M23.8994949,4.10050506 L21.7781746,6.22182541 M28,14 L25,14 M23.8994949,23.8994949 L21.7781746,21.7781746 M14,28 L14,25 M4.10050506,23.8994949 L6.22182541,21.7781746 M3.83475851e-17,14 L3,14 M4.10050506,4.10050506 L6.22182541,6.22182541" id="Path-7" stroke-linecap="round"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    </div>
+                    <div class="nuit">
+                    <!-- <img src="assets/img/moon.png" alt="Mode nuit"> -->
+                    <!--?xml version="1.0" ?--><svg class="feather feather-moon" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+    <div class="actions">
+        <a href="https://www.linkedin.com/in/mathis-lamotte-a386a6264/" target="_blank" class="btn linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="btn work-btn">Travaillons ensemble</a>
+        <div class="music-controls">
+            <a class="music-controls__btn" onclick="previousTrack()">
+                <i class="fa-solid fa-backward"></i>
+            </a>
+            <a class="music-controls__btn" onclick="togglePlayPause()" id="playPauseBtn">
+                <i class="fa-solid fa-play"></i>
+            </a>
+            <a class="music-controls__btn" onclick="nextTrack()">
+                <i class="fa-solid fa-forward"></i>
+            </a>
+        </div>
+    </div>
+
+
+        <section class="projets" id="projets">
+            <div class="gauche"> 
+                <div class="projects__card" id="cv-tech">
+                    <a href="https://github.com/Mts76000/Cv-tech/tree/main" target="_blank">
+                <img src="./Portfolio Mts_files/cvtech.png" alt="image projet cv tech">
+                <div class="text">
+                    <h2>Cv-tech</h2>
+                    <p>Plateforme en ligne de gestion de CV, permettant aux candidats de saisir leurs informations et aux
+                        recruteurs d'accéder à une base de données de CV complète.</p>
+                </div>
+                </a>
+            </div>
+            <div class="projects__card" id="votre-projet">
+                <img src="./Portfolio Mts_files/newProjet.png" alt="image votre futur projet">
+                <div class="text">
+                    <h2>Votre Projet</h2>
+                    <p>Votre projet peut devenir le nôtre, et ensemble, nous le mènerons vers le succès.</p>
+                </div>
+            </div>
+        </div>
+        <div class="droite">
+            <div class="projects__card" id="garde-enfant">
+                <a href="https://github.com/Mts76000/garde-enfant" target="_blank">
+                <img src="./Portfolio Mts_files/pitchoun.png" alt="image projet garde-enfant">
+                <div class="text">
+                    <h2>Garde-enfant</h2>
+                    <p>Application web permettant de réserver la garde de ses enfants via des crèches ou des nourrices à
+                        proximité.</p>
+                </div>
+                </a>
+            </div>
+            <div class="projects__card" id="onlyvax">
+                <a href="https://github.com/Mts76000/Onlyvax" target="_blank">
+                <img src="./Portfolio Mts_files/onlivax.png" alt="image projet onlivax">
+                <div class="text">
+                    <h2>Onlyvax</h2>
+                    <p>Onlyvax, un projet de groupe dédié à la gestion des vaccins et des rappels, offrant aux utilisateurs une
+                        expérience optimale.</p>
+                </div>
+                </a>
+            </div>
+        </div>
+            
+                </section>
+
+        <section id="competences" class="skills">
+            <h1>Compétences et outils</h1>
+            <div class="skills__icons">
+                <img class="carousel-item" src="./Portfolio Mts_files/bootstrap.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/css.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/figma.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/github.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/html.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/js.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/php.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/react.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/sass.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/symfony.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/tailwind.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/Vue.png" alt="logo skills">
+                <img class="carousel-item" src="./Portfolio Mts_files/wordpress.png" alt="logo skills">
+                
+             
+            </div>
+        </section>
+
+
+     
+
+        </div>
+    </main>
+
+
+    <footer>
+        <p>© 2024 Portfolio Mts. Tous droits réservés.</p>
+    </footer>
+
+    <script src="./Portfolio Mts_files/script.js"></script>
+
+
+
+
+<script id="define-custom-element-wtd-root" src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/src/scripts/injected/defineCustomElementsInjected.js" data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script><wtd-root id="cashback"><template shadowrootmode="open"><div id="root"></div><link rel="stylesheet" href="chrome-extension://emnoomldgleagdjapdeckpmebokijail/style.css"></template></wtd-root><script id="define-custom-element-wtd-root" src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/src/scripts/injected/defineCustomElementsInjected.js" data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script><script id="define-custom-element-wtd-div" src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/src/scripts/injected/defineCustomElementsInjected.js" data-params="{&quot;elementName&quot;:&quot;wtd-div&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:false}"></script><wtd-div id="wanteeedContainer" style="position: fixed; display: block; top: 0px; right: 0px; z-index: 2147483647;"><wtd-root id="comparator"><template shadowrootmode="open"><div id="root"><div class="pointer-events-none z-[2147483647] flex select-none flex-col items-end overflow-hidden font-sans antialiased"></div></div><link rel="stylesheet" href="chrome-extension://emnoomldgleagdjapdeckpmebokijail/style.css"></template></wtd-root><iframe id="wanteeedPanel" data-version="2.132.0" allowtransparency="true" style="background-color: rgb(255, 255, 255); border: none; border-radius: 3px; box-shadow: rgb(181, 181, 181) 1px 1px 3px 2px; clip: auto; display: none; margin-left: auto; margin-right: 12px; margin-top: 12px; position: relative; z-index: 2147483647; height: 1px; width: 1px;" src="./Portfolio Mts_files/saved_resource.html"></iframe></wtd-div><script id="define-custom-element-wtd-root" src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/src/scripts/injected/defineCustomElementsInjected.js" data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script></body></html>

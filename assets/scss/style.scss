@@ -460,6 +460,48 @@ main {
         }
       }
     }
+    .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      border: 1px solid $primary-color;
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      h1 {
+        font-size: 25px;
+      }
+      &__icons {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        .carousel-track {
+          display: flex;
+          gap: 1rem;
+          animation: scroll 15s linear infinite;
+
+          .carousel-item {
+            background-color: #e7e7e7;
+            width: 75px;
+            height: 75px;
+            border-radius: 15px;
+            padding: 1rem;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    }
   }
 }
 
@@ -574,6 +616,14 @@ main {
           p {
             max-width: 100%;
           }
+        }
+      }
+    }
+    .skillss {
+      padding: 0rem 1rem;
+      .skills {
+        .carousel-track {
+          animation: scroll 7.5s linear infinite;
         }
       }
     }

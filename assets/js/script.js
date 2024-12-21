@@ -1,3 +1,4 @@
+// nuit/jour
 const modeSwitch = document.querySelector(".btn.mode-switch");
 const body = document.body;
 
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const navLinks = document.querySelectorAll(".sidenav a");
+  const navLinks = document.querySelectorAll("#mySidenav a");
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       sidenav.classList.remove("active");

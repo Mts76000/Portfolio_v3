@@ -437,6 +437,16 @@ main .wrap2 .projet-mobile .accordion {
   transition: 0.4s;
   border-radius: 15px;
 }
+body.dark-mode main .wrap2 .projet-mobile .panel {
+  color: white;
+  background-color: #141416;
+}
+body.dark-mode main .wrap2 .projet-mobile .github {
+  color: white;
+}
+body.dark-mode main .wrap2 .projet-mobile .github a {
+  color: white;
+}
 main .wrap2 .projet-mobile p {
   padding: 1rem 0rem;
 }
@@ -568,6 +578,8 @@ main .wrap2 .skillss .skills__icons .carousel-track .carousel-item {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 0rem 0rem;
   }
   main .wrap2 .projets {
     display: none;
